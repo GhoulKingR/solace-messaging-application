@@ -9,58 +9,9 @@
     <script src="./Publisher.js"></script>
     <script src="./Subscriber.js"></script>
     <script>
-        let publisher = null;
-        let subscriber = null;
-
         window.onload = () => {
-            var factoryProps = new solace.SolclientFactoryProperties();
-            factoryProps.profile = solace.SolclientFactoryProfiles.version10;
-            solace.SolclientFactory.init(factoryProps);
-
-            const topicName = 'messages';
-            const hosturl = 'http://localhost:8008';
-            const username = 'admin';
-            const pass = 'admin';
-            const vpn = 'default';
-            const user = localStorage.getItem('username');
-
-            if (user !== null) {
-
-                publisher = new Publisher(topicName, hosturl, username, pass, vpn);
-                subscriber = new Subscriber(topicName, hosturl, username, pass, vpn);
-                const chat = document.getElementById('chat');
-    
-                publisher.connect();
-                subscriber.connect();
-
-                subscriber.session.on(solace.SessionEventCode.MESSAGE, function (message) {
-                    chat.innerHTML += display(message.getBinaryAttachment());
-                });
-    
-                document.getElementById('form').onsubmit = (e) => {
-                    e.preventDefault();
-                    if (publisher !== null && subscriber !== null) {
-                        const element = document.getElementById('message');
-                        const obj = JSON.stringify({message: element.value, user});
-                        publisher.publish(obj);
-                        element.value = '';
-                    }
-                }
-            } else {
-                document.location.assign('/');
-            }
+            // write code here
         };
-
-        function display(text) {
-            const {user, message} = JSON.parse(text);
-            const isUser = user === localStorage.getItem('username');
-            return `
-                <fieldset>
-                    <legend align="${isUser ? 'right' : 'left'}">${isUser ? 'You' : user }</legend>
-                    <div>${message}</div>
-                </fieldset>
-            `;
-        }
     </script>
 </head>
 <body>

@@ -7,11 +7,13 @@
     <title>Index</title>
     <script>
         window.onload = () => {
+            // check is username is already stored
             const user = localStorage.getItem('username');
             if (user !== null) {
                 document.location.assign('/chat.html');
             }
 
+            // allow users to log in to username
             document.getElementById('form').onsubmit = (e) => {
                 e.preventDefault();
                 localStorage.setItem('username', document.getElementById('username').value);
