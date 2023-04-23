@@ -1,6 +1,6 @@
 # Solace PubSub+ messaging application
 
-A messaging application that utilizes Solace PubSub+. Solace PubSub+ is a real-time event streaming platform. It is perfect for building messaging applications, because it allows real-time communication between applications.
+A messaging application that utilizes [Solace PubSub+](https://www.solace.dev/). Solace PubSub+ is a real-time event streaming platform. It is perfect for building messaging applications, because it allows real-time communication between applications.
 
 
 ## What’s in this project?
