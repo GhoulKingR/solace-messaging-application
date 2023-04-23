@@ -13,7 +13,7 @@ This project contains the following:
 
 ## Running the project
 
-There are several ways to run this application. Two of the ways include the following:
+The final application of this project is in the `final-project` branch. There are several ways to run the project. Two of those ways include the following:
 * Running the `index.html` file in your browser.
 * Serving the project through localhost on your system.
 
