@@ -1,22 +1,15 @@
 # Solace PubSub+ messaging application
 
-A messaging application that utilizes [Solace PubSub+](https://www.solace.dev/). Solace PubSub+ is a real-time event streaming platform. It is perfect for building messaging applications, because it allows real-time communication between applications.
+This is a starter project for a tutorial on building a messaging application with [Solace PubSub+](https://www.solace.dev/). Solace PubSub+ is a real-time event streaming platform. It is perfect for building messaging applications, because it allows real-time communication between applications.
 
 
 ## What’s in this project?
 
-This project contains the following:
-* The completed messaging application
-* Solace client JavaScript library version 10.13.0
-* Hand-written `Subscriber.js` and `Publisher.js` modules, for easier integration of the application with Solace PubSub+
+This project includes the Solace client JavaScript library version 10.13.0, and boilerplate-written files to get you started with building the application.
 
+## The final project
 
-## Running the project
-
-The final application of this project is in the `final-project` branch. There are several ways to run the project. Two of those ways include the following:
-* Running the `index.html` file in your browser.
-* Serving the project through localhost on your system.
-
+The final application of this project is in the `final-project` branch. You can learn more about it in the branch's readme.
 
 # License
 
