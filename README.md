@@ -9,7 +9,7 @@ This project includes the Solace client JavaScript library version 10.13.0, and 
 
 ## The final project
 
-The final application of this project is in the [`final-project`](https://github.com/TheGhoulRe/solace-messaging-application/tree/final-project) branch. You can learn more about it in the branch's readme.
+The final application of this project is in the [`final-project`](https://github.com/TheGhoulRe/solace-messaging-application/tree/final-project) branch. You can learn more about it in the branch's readme file.
 
 # License
 
