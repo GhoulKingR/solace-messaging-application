@@ -6,20 +6,14 @@ A messaging application that utilizes Solace PubSub+. Solace PubSub+ is a real-t
 ## What’s in this project?
 
 This project contains the following:
-
-
-
 * The completed messaging application
 * Solace client JavaScript library
-* Hand-written Subscriber and Publisher modules, for easier integration with the application
+* Hand-written `Subscriber.js` and `Publisher.js` modules, for easier integration with the application
 
 
 ## Running the project
 
 There are several ways to run this application. Two of the ways include the following:
-
-
-
 * Running the `index.html` file in your browser.
 * Serving the project through localhost on your system.
 
