@@ -8,7 +8,7 @@ A messaging application that utilizes [Solace PubSub+](https://www.solace.dev/).
 This project contains the following:
 * The completed messaging application
 * Solace client JavaScript library version 10.13.0
-* Hand-written `Subscriber.js` and `Publisher.js` modules, for easier integration of the application with Solace PubSub+
+* `Subscriber.js` and `Publisher.js` code, for easier integration of the application with Solace PubSub+
 
 
 ## Running the project
