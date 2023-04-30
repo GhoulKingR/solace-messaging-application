@@ -54,14 +54,4 @@ class Publisher {
       }
     }
   }
-
-  disconnect () {
-    if (this.session !== null) {
-      try {
-        this.session.disconnect();
-      } catch (error) {
-        console.error(error.toString());
-      }
-    }
-  }
 }

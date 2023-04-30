@@ -65,31 +65,4 @@ class Subscriber {
 
     }
   }
-
-  unsubscribe () {
-    if (this.session !== null) {
-      if (!this.subscribed) {
-
-        try {
-          const topicDestination = solace.SolclientFactory.createTopicDestination( this.topicName );
-          const timeout = 10000; // 10 seconds timeout for this operation
-
-          this.session.unsubscribe( topicDestination, true, this.topicName, timeout );
-        } catch (error) {
-          console.error( error.toString() );
-        }
-      }
-
-    }
-  }
-
-  disconnect () {
-    if (this.session !== null) {
-      try {
-        this.session.disconnect();
-      } catch (error) {
-        console.error(error.toString());
-      }
-    }
-  }
 }
